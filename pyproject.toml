@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mostafa_toolkit"
+version = "0.1.0"
+description = "A professional machine learning and data science toolkit"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "seaborn",
+    "scikit-learn",
+    "imbalanced-learn",
+    "xgboost",
+    "lightgbm",
+    "catboost",
+    "tensorflow",
+    "joblib",
+    "shap",
+    "tqdm",
+    "ipython",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["mostafa_toolkit*"]
